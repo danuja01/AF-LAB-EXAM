@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Movie from "./pages/Movie";
-import User from "./pages/User";
+import Movies from "./pages/Movies";
+import Users from "./pages/Users";
 import MovieDetails from "./pages/MovieDetails";
 import UserDetails from "./pages/UserDetails";
 import NavBar from "./components/NavBar";
@@ -19,10 +19,13 @@ function App() {
           <Route path="/" element={<Home movies={movies} users={users} />} />
         </Routes>
         <Routes>
-          <Route path="/movie" element={<Movie />} />
+          <Route path="/movie" element={<Movies movies={movies} />} />
         </Routes>
         <Routes>
-          <Route path="/user" element={<User />} />
+          <Route
+            path="/user"
+            element={<Users users={users} movies={movies} />}
+          />
         </Routes>
         <Routes>
           <Route path="/movieDetails/:id" element={<MovieDetails />} />

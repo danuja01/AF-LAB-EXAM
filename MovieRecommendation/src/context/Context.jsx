@@ -20,6 +20,11 @@ export const ContextProvider = ({ children }) => {
       name: "Movie 3",
       genre: "Genre 3",
     },
+    {
+      id: 4,
+      name: "Movie 4",
+      genre: "Genre 4",
+    },
   ];
 
   const initialUsers = [
@@ -27,13 +32,13 @@ export const ContextProvider = ({ children }) => {
       id: 1,
       name: "User 1",
       email: "user1@mail.com",
-      borrowedBooks: ["Book 1", "Book 2"],
+      favouriteMovies: ["Movie 1", "Movie 2"],
     },
     {
       id: 2,
       name: "User 2",
       email: "user2@mail.com",
-      borrowedBooks: ["Book 3, Book 4"],
+      favouriteMovies: ["Movie 3", "Movie 4"],
     },
   ];
 
