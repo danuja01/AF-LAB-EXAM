@@ -15,7 +15,15 @@ const Users = ({ users }) => {
   const handleAdd = (e) => {
     e.preventDefault();
 
-    addUser(user);
+    if (user.id && user.name && user.email) {
+      addUser(user);
+      setUser({
+        id: "",
+        name: "",
+        email: "",
+        borrowedBooks: [],
+      });
+    }
   };
 
   const handleDelete = (id) => {
