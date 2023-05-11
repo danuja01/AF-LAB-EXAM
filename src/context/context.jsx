@@ -22,6 +22,11 @@ export const ContextProvider = ({ children }) => {
       name: "Book 3",
       author: "Author 3",
     },
+    {
+      id: 4,
+      name: "Book 4",
+      author: "Author 4",
+    },
   ];
 
   const initialUsers = [
@@ -35,7 +40,7 @@ export const ContextProvider = ({ children }) => {
       id: 2,
       name: "User 2",
       email: "user2@mail.com",
-      borrowedBooks: ["Book 3"],
+      borrowedBooks: ["Book 3, Book 4"],
     },
   ];
 
