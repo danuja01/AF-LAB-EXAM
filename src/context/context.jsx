@@ -35,7 +35,7 @@ export const ContextProvider = ({ children }) => {
       id: 2,
       name: "User 2",
       email: "user2@mail.com",
-      borrowedBooks: [],
+      borrowedBooks: ["Book 3"],
     },
   ];
 
