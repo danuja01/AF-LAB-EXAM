@@ -22,14 +22,12 @@ function App() {
           />
         </Routes>
         <Routes>
-          <Route path="/songs" songs={songs} element={<Songs />} />
+          <Route path="/songs" element={<Songs songs={songs} />} />
         </Routes>
         <Routes>
           <Route
             path="/playlists"
-            playlists={playlists}
-            songs={songs}
-            element={<Playlist />}
+            element={<Playlist playlists={playlists} songs={songs} />}
           />
         </Routes>
         <Routes>
