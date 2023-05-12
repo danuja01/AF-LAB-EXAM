@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  background-color: lightgray;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 65rem;
+}
+
+td {
+  padding-top: 1rem;
+}
+
+a {
+  margin-right: 10px;
+}
+
+input {
+  display: block;
+}
+
+form button {
+  margin-top: 10px;
+}
