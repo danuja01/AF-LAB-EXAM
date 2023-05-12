@@ -66,7 +66,7 @@ export const ContextProvider = ({ children }) => {
   };
 
   //select a Song
-  const selectSong = (id) => {
+  const setSong = (id) => {
     return songs.filter((song) => song.id === id);
   };
 
@@ -89,7 +89,7 @@ export const ContextProvider = ({ children }) => {
   };
 
   //select a playlist
-  const selectPlaylist = (id) => {
+  const setPlaylist = (id) => {
     return playlists.filter((playlist) => playlist.id === id);
   };
 
@@ -98,10 +98,10 @@ export const ContextProvider = ({ children }) => {
     playlists,
     addSong,
     deleteSong,
-    selectSong,
+    setSong,
     addPlaylist,
     deletePlaylist,
-    selectPlaylist,
+    setPlaylist,
   };
 
   return <Context.Provider value={contextValues}>{children}</Context.Provider>;
